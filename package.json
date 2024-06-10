@@ -1,0 +1,17 @@
+{
+  "name": "similar-movies",
+  "version": "1.0.0",
+  "description": "By referring to the provided documentation at https://developer.themoviedb.org/docs, create an application that displays a list of movies similar to the one entered by the user. The application should allow the user to select a movie and then present a list of movies that share similarities with the selected movie.  Make sure to thoroughly read and understand the documentation to implement this functionality successfully! Submit your repository to Canvas by Sunday, June 16th by 4:59pm..",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-sass-middleware": "^1.1.0"
+  }
+
+
+}
