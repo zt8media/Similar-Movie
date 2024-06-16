@@ -3,19 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+      </style>
+      
     <title>Movie Similarity App</title>
 </head>
-<body>
-    <h1>Similar Movies</h1>
-    <div class="instructions">
-      Type in your favorite movie and find similar matches.
-    </div>
-    <input type="text" id="searchInput" placeholder="Search for a movie...">
-    <button onclick="searchMovies()">Search</button>
-    <div id="moviesList"></div>
-    <div id="similarMoviesList"></div>
-    <script src="/script.js"></script>
+
+    <body>
+        <div class="header">
+          <h1>Similar Movies</h1>
+          <div class="instructions">
+            Type in your favorite movie and find similar matches.
+          </div>
+          <div class="input-group">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button onclick="searchMovies()">Search</button>z
+          </div>
+        </div>
+        <div class="content">
+          <div id="moviesList"></div>
+          <div id="similarMoviesList"></div>
+        </div>
+        <div id="movieModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-body">
+                <img id="modalPoster" src="" alt="Movie Poster" style="float:left; width:40%; margin-right:20px;">
+                <div class="modal-text">
+                  <h2 id="modalTitle"></h2>
+                  <p id="modalGenres"></p>
+                  <p id="modalDescription"></p>
+                  <p id="modalRating"></p>
+                  <div id="similarMoviesContainer" class="similar-movies-container">
+                    <h3>Similar Titles</h3>
+                    <div id="similarMoviesSlider" class="similar-movies-slider">
+                        <!-- Similar movies will be dynamically inserted here -->
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+    <script src="script.js"></script>
   </body>
   
 </html>

@@ -7,8 +7,8 @@ const port = process.env.PORT || 3000;
 
 // Setting up middleware for SASS compilation
 app.use(sassMiddleware({
-    src: path.join(__dirname, 'styling'), // Source directory for SASS files
-    dest: path.join(__dirname, 'frontend'), // Destination directory for CSS files
+    src: path.join(__dirname, 'styling'), 
+    dest: path.join(__dirname, 'frontend'), 
     debug: true,
     outputStyle: 'compressed',
     prefix:  '/'  // Adjusted to the root of 'frontend' since styles.css is directly under 'frontend'
