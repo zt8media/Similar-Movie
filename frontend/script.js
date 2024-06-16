@@ -1,5 +1,7 @@
-const apiKey = 'b3b1d03983f568c9360abc6962677586'; // Your TMDb API key
+const apiKey = 'b3b1d03983f568c9360abc6962677586'; 
 const imageUrl = 'https://image.tmdb.org/t/p/w500'; // Base URL for images, using a width of 500 pixels
+
+
 // Function to search for movies based on user input
 
 
